@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Bootstrap</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    
+    <script src = "../bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src = "../bootstrap/js/bootstrap.min.js "></script>
+</head>
+<body>
+	
+	<div class="container">
+		<h1>Tim hieu ve media object</h1>
+		<div class="row">
+			<ul class="nav nav-tabs responsive" id="myTab">
+				<li class="active"><a href="#ctsp" data-toggle="tab"><span class="glyphicon glyphicon-info-sign"></span> Chi tiết sản phẩm</a></li>
+				<li><a href="#tskt" data-toggle="tab"><span class="glyphicon glyphicon-cod"></span> Thông số kỹ thuật</a></li>
+				<li><a href="#hdmh" data-toggle="tab"><span class="glyphicon glyphicon-plane"></span> Hướng dẫn mua hàng</a></li>
+				<li><a href="#bl" data-toggle="tab"><span class="glyphicon glyphicon-comment"></span> Bình luận</a></li>
+			</ul>
+			<div class="tab-content responsive">
+				<div class="tab-pane active" id="ctsp">
+					<p>Thông tin sản phẩm</p>
+				</div>
+				<div class="tab-pane" id="tskt">
+					<p>Thông số kỹ thuật</p>
+				</div>
+				<div class="tab-pane" id="hdmh">
+					<p>Hướng dẫn mua hàng</p>
+				</div>
+				<div class="tab-pane" id="bl">
+					<p>Bình luận</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../b25_responsive_tab_navigation/responsive-tabs.js"></script>
+	    <script type="text/javascript">
+	      $( '#myTab a' ).click( function ( e ) {
+	        e.preventDefault();
+	        $( this ).tab( 'show' );
+	      } );
+
+	      $( '#moreTabs a' ).click( function ( e ) {
+	        e.preventDefault();
+	        $( this ).tab( 'show' );
+	      } );
+
+	      ( function( $ ) {
+	          // Test for making sure event are maintained
+	          $( '.js-alert-test' ).click( function () {
+	            alert( 'Button Clicked: Event was maintained' );
+	          } );
+	          fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
+	      } )( jQuery );
+
+	    </script>
+</body>
+</html>

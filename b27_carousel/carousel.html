@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Bootstrap</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    
+    <script src = "../bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src = "../bootstrap/js/bootstrap.min.js "></script>
+
+    <!--Định dạng caption cho slide-->
+    <style type="text/css">
+    	.carousel-caption{
+    		padding: 20px;
+    		background-color: rgba(29,29,29,0.40);
+    		border-radius: 3px;
+    		-webkit-border-radius:13px;
+    		-moz-border-radius:13px;
+    	}
+    	.carousel-inner{
+    		border:5px double #f7f7f7;
+    		-webkit-border-radius:13px;
+    		-moz-border-radius:13px;
+    		border-radius: 3px;
+    	}
+
+    </style>
+</head>
+<body>
+	
+	<div class="container">
+		<h1>Tao slideshow hình ảnh trong BS bằng Carousel</h1>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="carousel slide" data-ride="carousel" id="carousel_example">
+					<div class="carousel-inner">
+						<div class="item active">
+							<img class="img-responsive" src="../b27_carousel/1.jpg">
+							<div class="carousel-caption">
+								<h3>Mô tả 1</h3>
+								<p>Nội dung mô tả 1</p>
+							</div>
+						</div>
+						<div class="item">
+							<img class="img-responsive" src="../b27_carousel/2.jpg">
+							<div class="carousel-caption">
+								<h3>Mô tả 1</h3>
+								<p>Nội dung mô tả 1</p>
+							</div>
+						</div>
+						<div class="item">
+							<img class="img-responsive" src="../b27_carousel/3.jpg">
+							<div class="carousel-caption">
+								<h3>Mô tả 1</h3>
+								<p>Nội dung mô tả 1</p>
+							</div>
+						</div>
+					</div>
+					<ol class="carousel-indicators">
+						<li class="active" data-target="#carousel_example" data-slide-to="0"></li>
+						<li class="" data-target="#carousel_example" data-slide-to="1"></li>
+						<li class="" data-target="#carousel_example" data-slide-to="2"></li>
+					</ol>
+					<a href="#carousel_example" class="left carousel-control" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a href="#carousel_example" class="right carousel-control" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--
+		Chỉnh thời gian chạy cho mỗi slide
+	-->
+	<script type="text/javascript">
+		$(#carousel_example).carousel({
+			interval:2000
+		})
+	</script>
+
+
+</body>
+</html>

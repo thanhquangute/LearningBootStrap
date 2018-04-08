@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Bootstrap</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    
+    <script src = "../bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src = "../bootstrap/js/bootstrap.min.js "></script>
+</head>
+<body>
+	
+	<div class="container">
+		<h1>Tao modal</h1>
+		<div class="row">
+			<button class="btn btn-info" type="button" data-toggle="modal" data-target="#Mymodal">Thông báo</button>
+
+			<!-- Tao hop model -->
+			<div class="modal" id="Mymodal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span arial-hidden="true">&times;</span></button>
+							Thông báo nhẹ
+						</div>
+						<div class="modal-body">
+							<p>1. Nghỉ</p>
+							<p>2. Nghỉ</p>
+							<p>3. Nghỉ</p>
+						</div>
+						<div class="modal-footer">
+							<p>Thông tin thêm</p>
+							<button type="button" class="btn btn-warning" data-dismiss="modal">Đóng lại</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,18 @@
+@media(max-width:767px){
+	.nav-tabs>li{
+		float:none;
+		border:1px solid #C9C8C8;
+	}
+	.nav-tabs>li.active>a{
+		border: none;
+	}
+
+	.nav>li>a:hover,
+	.nav>li>a:focus,
+	.nav-tabs>li.active>a,
+	.nav-tabs>li.active>a:hover,
+	.nav-tabs>li.active>a:focus{
+		border: none;
+		background-color: #DAF9F7;
+	}
+}
